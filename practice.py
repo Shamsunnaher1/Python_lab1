@@ -62,3 +62,4 @@ print("The ASCII value is: ", int(AS))
 a = 10
 b = 20
 temp = int(a)
+a = int(b)
