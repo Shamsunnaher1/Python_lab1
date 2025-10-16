@@ -63,3 +63,24 @@ a = 10
 b = 20
 temp = int(a)
 a = int(b)
+b = int(temp)
+print(int(a), int(b))
+
+#Write a program to swap two numbers without using a temporary variable
+a = 10
+b = 20
+sum = a + b
+a = sum - a
+b = sum - b
+print(int(a), int(b))
+
+
+#Operators
+
+#Write a program to check whether a number is even or odd using both modulo and bitwise operators
+a = input("enter a number:")
+if int(a) % 2 == 0:
+    print("number is even")
+else:
+    print("number is odd")
+    
