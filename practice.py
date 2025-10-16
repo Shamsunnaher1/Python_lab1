@@ -84,3 +84,4 @@ if int(a) % 2 == 0:
 else:
     print("number is odd")
     
+g = 100
