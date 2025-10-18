@@ -175,4 +175,114 @@ else:
     print("fail")
 
 
-#Write a program to determine whether a character is a vowel, consonant, digit, or special symbol.
+#Write a program to create a simple calculator using switch–case statements.
+a = input("enter 1st number: ")
+b = input("enter 2nd number: ")
+
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+choice = input("\nEnter your choice : ")
+
+match choice:
+    case '1':
+        result = int(a) + int(b)
+        print("Result: ", result )
+    case '2':
+        result = int(a) - int(b)
+        print(" Result: ",result  )
+    case '3':
+        result = int(a) * int(b)
+        print("Result: ", result  )
+    case '4':
+         result = int(a) / int(b)
+         print("Result: ", result )
+   
+
+
+#Write a program to use goto to repeatedly take input from the user until 0 is entered.
+while True:
+    a = int(input("enter the number: "))   
+    if a == 0:
+        print("terminated.")
+        break
+    else:
+        print("you enterd: ", int(a)) 
+
+
+#Loops
+#Write a program to print numbers from 1 to 100 using all three loops (for, while, and do–while).
+for i in range(1, 101):
+    print(i)
+    
+i = 1
+while i < 101:
+   print(i)
+   i += 1
+
+
+#Write a program to find the sum of the first N natural numbers.
+N = int(input("enter the value of N: "))
+i = 0
+sum = 0
+while i < N:
+    sum += i 
+    i += 1
+print("sum", int(sum))
+        
+
+#Write a program to calculate the factorial of a given number.
+N = int(input("enter the value of N: "))
+i = 1
+fact = 1
+while i < N:
+    fact *= i 
+    i += 1
+print("factorial", int(fact))
+
+
+#Write a program to reverse a given number.
+num = 123
+rev = 0
+while num != 0:
+    n = int(num) % 10
+    rev = (int(rev) * 10) + n
+    num = int(num) // 10
+
+print("reverse is: ", rev)
+
+
+#Write a program to count the number of digits and find the sum of digits in a given number.
+num = 1234
+sum = 0
+count = 0
+while num != 0:
+    n = int(num) % 10
+    sum = int(sum) + n
+    count += 1
+    num = int(num) // 10
+
+print("sum is: ", sum, "count is: ", count)  
+
+
+#Write a program to generate and display the multiplication table of any given number.
+N = input("enter the number: ")
+print("multiplication table of: ", N)
+
+for i in range(1,11):
+    r = int(N) * i
+    print(int(N), "*", i, "=", int(r) )
+
+
+#Write a program to print all even numbers between two given limits
+for i in range(1,50):
+    if i % 2 == 0:
+        print("even: ", i)
+
+
+#Write a program to check whether a given number is a Prime number.
+N = input("enter the number: ")
+for i in range(2,int(N ** 0.5)+1):
+    if N % i == 0:
+    
